@@ -1,0 +1,13 @@
+This is a guide how to make your own presentation with this program.
+
+First of all we need the settings.txt file.
+
+The first line is how wide the resolution of the presentation is. (by default it is 1024, but you can change it)
+
+The second line is how high the resolution of the presentation is. (by default it is 768, but you can change it)
+
+The third line is how many slides are in the presentation. (by default it is 5, but you can change it)
+
+And that's it.
+
+You just put a bunch of pictures into the folder named "slides", and name the first slide "1.png", second slide "2.png" and so on.
