@@ -1,30 +1,30 @@
-import pygame   #импортирование нужных библиотек
+import pygame   #importing pygame
 from pygame import *
 pygame.init()
 
-window_width = 0    #переменные
+window_width = 0    #variables
 window_height = 0
 current_slide = 1
 slides_filenames_list = list()
 
-slide_filename = "0"    #тут переменные настроек
+slide_filename = "0"    #settings variables
 settings = open("settings.txt", "r")
 window_width = int(settings.readline())
 window_height = int(settings.readline())
 amount_of_slides = int(settings.readline())
 
-okno = pygame.display.set_mode((window_width, window_height), pygame.FULLSCREEN)   #настройки окна
+okno = pygame.display.set_mode((window_width, window_height), pygame.FULLSCREEN)   #window settings
 pygame.display.set_caption('Presentation engine')
 
-for i in range(amount_of_slides): #импортирование картинок слайдов
-    slide_filename = f"slides/{i+1}.png"   #я на эту строку потратил 30 минут
+for i in range(amount_of_slides): #importing slides pictures
+    slide_filename = f"slides/{i+1}.png"   #i wasted 30 minutes on this line of code
     slides_filenames_list.append(slide_filename)
 
 
 clock = time.Clock()
 game = True
 
-while game:
+while game:    #the loop
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: 
             game = False
